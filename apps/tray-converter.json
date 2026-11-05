@@ -1,0 +1,31 @@
+{
+  "id": "tray-converter",
+  "displayName": "Tray Converter",
+  "description": "Convert units and copy results from a Windows tray flyout.",
+  "categories": ["Utilities"],
+  "tags": ["Units", "Productivity"],
+  "icon": {
+    "path": "assets/tray-converter/icon.png",
+    "description": "Two white horizontal arrows pointing in opposite directions."
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-converter",
+  "license": {
+    "spdxId": "MIT",
+    "fileUrl": "https://github.com/Tray-Land/tray-converter/blob/fe46aaaef4bd871090b72b52e0f3c73809fb20b4/LICENSE",
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square44x44Logo.targetsize-96.png at source revision fe46aaaef4bd871090b72b52e0f3c73809fb20b4; MIT notice is distributed with the image.",
+    "redistributionVerified": true,
+    "remixVerified": true
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": ["x64", "arm64"]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "checkedAtUtc": "2026-10-27T14:17:27Z",
+    "sourceUrl": "https://github.com/Tray-Land/tray-converter/tree/fe46aaaef4bd871090b72b52e0f3c73809fb20b4",
+    "notes": "Public MIT source and Windows package manifest checked at this revision. Release v1.0.0 has architecture-specific MSIX files but no stable .appinstaller. A local pinned remix recipe exists, but its immutable public tray-kit release and catalog approval are not yet available. This remains a source listing, not a supported install or remix channel."
+  }
+}

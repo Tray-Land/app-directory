@@ -1,0 +1,31 @@
+{
+  "id": "tray-radar",
+  "displayName": "Tray Radar",
+  "description": "View US National Weather Service radar from a Windows notification-area flyout.",
+  "categories": ["Weather"],
+  "tags": ["Radar", "United States"],
+  "icon": {
+    "path": "assets/tray-radar/icon.png",
+    "description": "White circular radar sweep with a dot on a transparent background."
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-radar",
+  "license": {
+    "spdxId": "MIT",
+    "fileUrl": "https://github.com/Tray-Land/tray-radar/blob/ace473d892150a60b24564037422f8cf89179bbf/LICENSE",
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square44x44Logo.targetsize-96.png at source revision ace473d892150a60b24564037422f8cf89179bbf; MIT notice is distributed with the image.",
+    "redistributionVerified": true,
+    "remixVerified": true
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": ["x64", "arm64"]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "checkedAtUtc": "2026-10-27T14:17:27Z",
+    "sourceUrl": "https://github.com/Tray-Land/tray-radar/tree/ace473d892150a60b24564037422f8cf89179bbf",
+    "notes": "Public MIT source and v1.2.0 feed inspected. Although Tray-Land hosts a stable link, its App Installer update URI and package/dependency URIs still point to legacy TheJoeFin/tray-radar. Do not equate the aliases or enable the channel without a corrected same-repository feed and identity verification. No remix recipe is validated. Screenshot omitted because third-party map artwork rights were not established."
+  }
+}

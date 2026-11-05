@@ -1,0 +1,30 @@
+name: Validate app directory
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, inspected
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4, inspected
+        with:
+          dotnet-version: 10.0.403
+      - name: Validate every record, schema, asset, and deterministic output
+        shell: bash
+        run: |
+          stamp="$(date -u -d "$(git show -s --format=%cI "$GITHUB_SHA")" '+%Y-%m-%dT%H:%M:%SZ')"
+          dotnet run --file scripts/BuildCatalog.cs -- --output _site/v1 --revision "$GITHUB_SHA" --generated-at "$stamp"
+          dotnet run --file scripts/BuildCatalog.cs -- --output _verify/v1 --revision "$GITHUB_SHA" --generated-at "$stamp"
+          diff -qr _site/v1 _verify/v1
+      - name: Reject unsafe and unsupported contributions
+        shell: pwsh
+        run: ./scripts/TestCatalog.ps1

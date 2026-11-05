@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tray-land.github.io/app-directory/v1/catalog.schema.json",
+  "title": "TrayLand catalog v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "revision", "generatedAtUtc", "apps"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "revision": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "generatedAtUtc": { "type": "string", "format": "date-time" },
+    "apps": { "type": "array", "maxItems": 2000, "items": { "$ref": "#/$defs/app" } }
+  },
+  "$defs": {
+    "https": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "asset": {
+      "type": "object", "additionalProperties": false, "required": ["path", "description"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1, "maxLength": 240 },
+        "description": { "type": "string", "minLength": 1, "maxLength": 300 }
+      }
+    },
+    "identity": {
+      "type": "object", "additionalProperties": false, "required": ["name", "publisher"],
+      "properties": {
+        "name": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]{2,49}$" },
+        "publisher": { "type": "string", "pattern": "^CN=", "maxLength": 512 }
+      }
+    },
+    "channel": {
+      "type": "object", "additionalProperties": false, "required": ["id", "kind"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "kind": { "enum": ["gitHub", "store"] },
+        "identity": { "anyOf": [{ "$ref": "#/$defs/identity" }, { "type": "null" }] },
+        "appInstallerUrl": { "anyOf": [{ "$ref": "#/$defs/https" }, { "type": "null" }] },
+        "storeProductId": { "type": ["string", "null"], "maxLength": 20 },
+        "storeUrl": { "anyOf": [{ "$ref": "#/$defs/https" }, { "type": "null" }] },
+        "identityVerified": { "type": "boolean" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "gitHub" } } },
+          "then": {
+            "required": ["identity", "identityVerified", "appInstallerUrl"],
+            "properties": {
+              "identity": { "$ref": "#/$defs/identity" },
+              "identityVerified": { "const": true },
+              "appInstallerUrl": {
+                "allOf": [
+                  { "$ref": "#/$defs/https" },
+                  { "pattern": "^https://github\\.com/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+/releases/latest/download/[^/?#]+\\.appinstaller$" }
+                ]
+              },
+              "storeProductId": { "type": "null" }, "storeUrl": { "type": "null" }
+            }
+          },
+          "else": {
+            "required": ["storeProductId", "storeUrl"],
+            "properties": {
+              "storeProductId": { "type": "string", "pattern": "^[A-Za-z0-9]{1,20}$" },
+              "storeUrl": { "type": "string", "pattern": "^https://(apps\\.microsoft\\.com|www\\.microsoft\\.com)/" },
+              "appInstallerUrl": { "type": "null" }
+            }
+          }
+        }
+      ]
+    },
+    "license": {
+      "type": "object", "additionalProperties": false, "required": ["spdxId", "fileUrl", "attribution"],
+      "properties": {
+        "spdxId": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "fileUrl": { "$ref": "#/$defs/https" },
+        "attribution": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "redistributionVerified": { "type": "boolean" }, "remixVerified": { "type": "boolean" }
+      }
+    },
+    "remix": {
+      "type": "object", "additionalProperties": false,
+      "required": ["recipeId", "recipeVersion", "sourceRevision", "projectPath"],
+      "properties": {
+        "recipeId": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "recipeVersion": { "type": "string", "minLength": 1, "maxLength": 40 },
+        "sourceRevision": { "type": "string", "pattern": "^[a-fA-F0-9]{40}$" },
+        "projectPath": { "type": "string", "minLength": 1, "maxLength": 240 }
+      }
+    },
+    "app": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "displayName", "description", "categories", "verification"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Za-z0-9.-]{1,80}$" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "description": { "type": "string", "minLength": 1, "maxLength": 1200 },
+        "categories": { "type": "array", "minItems": 1, "maxItems": 12, "items": { "type": "string", "minLength": 1, "maxLength": 60 } },
+        "tags": { "type": "array", "maxItems": 24, "items": { "type": "string", "minLength": 1, "maxLength": 60 } },
+        "icon": { "anyOf": [{ "$ref": "#/$defs/asset" }, { "type": "null" }] },
+        "screenshots": { "type": "array", "maxItems": 12, "items": { "$ref": "#/$defs/asset" } },
+        "repositoryUrl": { "anyOf": [{ "$ref": "#/$defs/https" }, { "type": "null" }] },
+        "license": { "anyOf": [{ "$ref": "#/$defs/license" }, { "type": "null" }] },
+        "channels": { "type": "array", "maxItems": 4, "items": { "$ref": "#/$defs/channel" } },
+        "remix": { "anyOf": [{ "$ref": "#/$defs/remix" }, { "type": "null" }] },
+        "status": { "enum": ["active", "deprecated", "withdrawn"] },
+        "statusReason": { "type": ["string", "null"], "maxLength": 1000 },
+        "compatibility": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "minimumWindowsVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$" },
+            "architectures": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "enum": ["x64", "arm64", "neutral"] } }
+          }
+        },
+        "verification": {
+          "type": "object", "additionalProperties": false, "required": ["checkedAtUtc", "sourceUrl", "notes"],
+          "properties": {
+            "checkedAtUtc": { "type": "string", "format": "date-time" },
+            "sourceUrl": { "$ref": "#/$defs/https" },
+            "notes": { "type": "string", "minLength": 1, "maxLength": 2000 }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "enum": ["deprecated", "withdrawn"] } }, "required": ["status"] },
+          "then": {
+            "required": ["statusReason"],
+            "properties": { "statusReason": { "type": "string", "minLength": 1, "pattern": "\\S" } }
+          }
+        },
+        {
+          "if": { "properties": { "remix": { "type": "object" } }, "required": ["remix"] },
+          "then": {
+            "required": ["repositoryUrl", "license"],
+            "properties": {
+              "repositoryUrl": { "$ref": "#/$defs/https" },
+              "license": {
+                "allOf": [
+                  { "$ref": "#/$defs/license" },
+                  {
+                    "required": ["redistributionVerified", "remixVerified"],
+                    "properties": {
+                      "spdxId": { "enum": ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC"] },
+                      "redistributionVerified": { "const": true },
+                      "remixVerified": { "const": true }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
