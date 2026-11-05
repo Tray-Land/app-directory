@@ -17,9 +17,11 @@ function Assert-Rejected([string] $name, [scriptblock] $mutate) {
     & $mutate $fixture
     dotnet run --file $publisher -- --root $fixture --output (Join-Path 'published' 'v1') `
         --revision local-fixture --generated-at 2026-10-27T14:17:27Z *> $null
-    if ($LASTEXITCODE -eq 0) {
+    $exitCode = $LASTEXITCODE
+    if ($exitCode -eq 0) {
         throw "The publisher accepted invalid case '$name'."
     }
+    $global:LASTEXITCODE = 0
     Write-Output "Rejected $name."
 }
 
