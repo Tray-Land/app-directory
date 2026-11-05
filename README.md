@@ -1,11 +1,12 @@
 # TrayLand app directory
 
-This folder can be copied into an independent `Tray-Land/app-directory` repository:
-the publisher, schema, assets, examples, and workflows do **not** depend on Maker
-Market, a private project, or a sibling checkout. The intended public URL is
-`https://tray-land.github.io/app-directory/v1/catalog.json`. **It is proposed,
-not deployed.** No repository creation, push, signing, or Pages publication was
-performed as part of this source delivery.
+This is the source for the public [`Tray-Land/app-directory`](https://github.com/Tray-Land/app-directory)
+repository. The publisher, schema, assets, examples, and workflows do **not**
+depend on Maker Market, a private project, or a sibling checkout. The live
+catalog is available at
+[`https://tray-land.github.io/app-directory/v1/catalog.json`](https://tray-land.github.io/app-directory/v1/catalog.json),
+and its canonical schema is available at
+[`https://tray-land.github.io/app-directory/v1/catalog.schema.json`](https://tray-land.github.io/app-directory/v1/catalog.schema.json).
 
 ## Contribute and build
 
@@ -78,15 +79,15 @@ permissions and no publication/signing secrets.
 
 ## Publication gate
 
-After **separate authorization** to create/configure the repository, enable
-Pages from GitHub Actions, protect `main` with required review and the
-`Validate app directory` check, and protect the `github-pages` environment
-with required reviewers and branch restriction to `main`. Only then enable
-the provided `Publish approved app directory` workflow: it runs solely on
-`main` pushes, builds the full versioned index/assets without secrets, and
-deploys through that protected environment. The workflow alone cannot
-configure those repository-side approval rules, and the URL is not considered
-live until actual external publication and retrieval are verified.
+The public repository deploys from `main` with GitHub Pages configured to use
+GitHub Actions. `main` requires pull-request review and the
+`Validate app directory` check; the `github-pages` environment requires a
+reviewer and accepts deployments only from `main`. A push to `main` runs
+validation and the provided `Publish approved app directory` workflow, which
+builds the full versioned index/assets without secrets, uploads only `_site`,
+and deploys through that protected environment. Publication is considered
+complete only after the catalog, schema, and every referenced asset are
+retrieved successfully from the unauthenticated HTTPS URLs.
 
 The current v1 client is strict: unknown fields and channel values are rejected.
 Changes confined to existing presentation fields are compatible; adding fields,
