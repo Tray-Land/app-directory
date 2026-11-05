@@ -84,10 +84,12 @@ GitHub Actions. `main` requires pull-request review and the
 `Validate app directory` check; the `github-pages` environment requires a
 reviewer and accepts deployments only from `main`. A push to `main` runs
 validation and the provided `Publish approved app directory` workflow, which
-builds the full versioned index/assets without secrets, uploads only `_site`,
-and deploys through that protected environment. Publication is considered
-complete only after the catalog, schema, and every referenced asset are
-retrieved successfully from the unauthenticated HTTPS URLs.
+builds the full versioned index/assets without secrets. Before upload, that
+publish job repeats the byte-for-byte determinism and rejection suites; only
+after they pass does it upload `_site` and deploy through the protected
+environment. Publication is considered complete only after the catalog, schema,
+and every referenced asset are retrieved successfully from the unauthenticated
+HTTPS URLs.
 
 The current v1 client is strict: unknown fields and channel values are rejected.
 Changes confined to existing presentation fields are compatible; adding fields,
