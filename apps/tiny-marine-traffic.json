@@ -1,0 +1,40 @@
+{
+  "id": "tiny-marine-traffic",
+  "displayName": "Tiny Marine Traffic",
+  "description": "View marine traffic from the Windows system tray using native maps, Open Waters AIS, and saved waterways. AIS data is not intended for navigation.",
+  "categories": [
+    "Utilities"
+  ],
+  "tags": [
+    "Maritime",
+    "AIS",
+    "Live data"
+  ],
+  "icon": {
+    "description": "Square app icon for Tiny Marine Traffic.",
+    "path": "assets/tiny-marine-traffic/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tiny-marine-traffic",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision 634fb50b9ac24f772b494cf69aad08268f361b32; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tiny-marine-traffic/blob/634fb50b9ac24f772b494cf69aad08268f361b32/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app documentation warns that AIS data is not for navigation. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tiny-marine-traffic/tree/634fb50b9ac24f772b494cf69aad08268f361b32",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

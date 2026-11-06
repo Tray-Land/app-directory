@@ -1,0 +1,39 @@
+{
+  "id": "tiny-atc",
+  "displayName": "Tiny ATC",
+  "description": "View live air traffic around you from the Windows notification area using OpenSky Network ADS-B data.",
+  "categories": [
+    "Utilities"
+  ],
+  "tags": [
+    "Aviation",
+    "Live data"
+  ],
+  "icon": {
+    "description": "Square app icon for Tiny ATC.",
+    "path": "assets/tiny-atc/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tiny-atc",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision cbbe02e688e6524dcb1607750a5c80473c62a411; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tiny-atc/blob/cbbe02e688e6524dcb1607750a5c80473c62a411/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The source-only policy is retained for this catalog expansion. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tiny-atc/tree/cbbe02e688e6524dcb1607750a5c80473c62a411",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

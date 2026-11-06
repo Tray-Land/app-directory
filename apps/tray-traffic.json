@@ -1,0 +1,40 @@
+{
+  "id": "tray-traffic",
+  "displayName": "Tray Traffic",
+  "description": "View live traffic and routes between home, work, and school from the Windows tray.",
+  "categories": [
+    "Travel"
+  ],
+  "tags": [
+    "Traffic",
+    "Routes",
+    "Maps"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Traffic.",
+    "path": "assets/tray-traffic/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-traffic",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision ef2ca8133fe48293c778f7ddbeaeaee584e3ac53; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-traffic/blob/ef2ca8133fe48293c778f7ddbeaeaee584e3ac53/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT application source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The source documents a separate license for the native map dependency; no map screenshot is redistributed. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-traffic/tree/ef2ca8133fe48293c778f7ddbeaeaee584e3ac53",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

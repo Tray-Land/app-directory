@@ -1,0 +1,41 @@
+{
+  "id": "tray-random",
+  "displayName": "Tray Random",
+  "description": "Generate dice rolls, names, email addresses, addresses, lorem ipsum, GUIDs, and other test data from the Windows tray.",
+  "categories": [
+    "Utilities",
+    "Developer Tools"
+  ],
+  "tags": [
+    "Test data",
+    "Generators",
+    "Offline"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Random.",
+    "path": "assets/tray-random/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-random",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: TrayRandom/Assets/Square150x150Logo.png at source revision 01faa0e2d3fe41329b632790080dc01d64ffb0f8; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-random/blob/01faa0e2d3fe41329b632790080dc01d64ffb0f8/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the nested TrayRandom Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from TrayRandom/Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-random/tree/01faa0e2d3fe41329b632790080dc01d64ffb0f8",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "tiny-solitaire",
+  "displayName": "Tiny Solitaire",
+  "description": "Play offline Klondike solitaire from the Windows system tray.",
+  "categories": [
+    "Games"
+  ],
+  "tags": [
+    "Cards",
+    "Offline"
+  ],
+  "icon": {
+    "description": "Square app icon for Tiny Solitaire.",
+    "path": "assets/tiny-solitaire/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tiny-solitaire",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision b52f825be8d627ff62d1d88c435a1bb5b6761d18; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tiny-solitaire/blob/b52f825be8d627ff62d1d88c435a1bb5b6761d18/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tiny-solitaire/tree/b52f825be8d627ff62d1d88c435a1bb5b6761d18",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

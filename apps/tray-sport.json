@@ -1,0 +1,39 @@
+{
+  "id": "tray-sport",
+  "displayName": "Tray Sport",
+  "description": "Check favorite teams, latest scores, and upcoming games from the Windows tray.",
+  "categories": [
+    "Sports"
+  ],
+  "tags": [
+    "Scores",
+    "Teams"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Sport.",
+    "path": "assets/tray-sport/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-sport",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision 18c3082b6d5d81055754a868c3d41dc3050e710d; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-sport/blob/18c3082b6d5d81055754a868c3d41dc3050e710d/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. No team logos or screenshots are redistributed. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-sport/tree/18c3082b6d5d81055754a868c3d41dc3050e710d",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

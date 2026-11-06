@@ -1,0 +1,42 @@
+{
+  "id": "trai-usage",
+  "displayName": "Trai Usage",
+  "description": "See Claude and GitHub Copilot plan usage limits from the Windows notification area.",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "tags": [
+    "AI",
+    "Claude",
+    "GitHub Copilot",
+    "Usage tracking"
+  ],
+  "icon": {
+    "description": "Square app icon for Trai Usage.",
+    "path": "assets/trai-usage/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/trai-usage",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision cc4a4bc6771a7cf329013aafbbcd4262666df6fd; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/trai-usage/blob/cc4a4bc6771a7cf329013aafbbcd4262666df6fd/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/trai-usage/tree/cc4a4bc6771a7cf329013aafbbcd4262666df6fd",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}
