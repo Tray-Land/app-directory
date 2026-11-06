@@ -29,11 +29,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "10383BB9-F05F-4024-9CAC-77B7B6F08D2F",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-git/releases/latest/download/TrayGit.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. This expansion intentionally remains source-only. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.3.0 App Installer https://github.com/Tray-Land/tray-git/releases/latest/download/TrayGit.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/tray-git/tree/e3588e02b23978c3b5589ca8b221b2470be182b8",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }

@@ -29,11 +29,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "8D79C190-6412-47B2-B0D9-6385853284D6",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/traycer/releases/latest/download/TrayCer.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.0.0 App Installer https://github.com/Tray-Land/traycer/releases/latest/download/TrayCer.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/traycer/tree/146b2abce38c75c63fe504f1b89dd1839ea115a5",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }

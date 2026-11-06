@@ -29,11 +29,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "2916D620-7C53-4DBF-8AAA-4FF7654C3C71",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-2048/releases/latest/download/Tray2048.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.0.1 App Installer https://github.com/Tray-Land/tray-2048/releases/latest/download/Tray2048.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/tray-2048/tree/31281d60a2b56cf6f16950c9ee1d53e8fd3e7308",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }

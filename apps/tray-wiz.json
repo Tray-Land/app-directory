@@ -31,11 +31,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "999C4FC4-5BC8-4B76-A2CA-FDFCF584B80B",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-wiz/releases/latest/download/TrayWiz.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. Control uses the local network. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. Control uses the local network. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.0.2 App Installer https://github.com/Tray-Land/tray-wiz/releases/latest/download/TrayWiz.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/tray-wiz/tree/f690d5ead21fd24915acc9c9ea144ab60e179881",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }
