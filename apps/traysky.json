@@ -1,0 +1,39 @@
+{
+  "id": "traysky",
+  "displayName": "Traysky",
+  "description": "Read Bluesky from the Windows system tray.",
+  "categories": [
+    "Social"
+  ],
+  "tags": [
+    "Bluesky",
+    "Feeds"
+  ],
+  "icon": {
+    "description": "Square app icon for Traysky.",
+    "path": "assets/traysky/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/traysky",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Traysky/Assets/Square150x150Logo.scale-200.png at source revision 48e04cd099c68f6f253d42ae8dafd780575e0bc8; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/traysky/blob/48e04cd099c68f6f253d42ae8dafd780575e0bc8/LICENSE.txt",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the nested Traysky Windows package manifest were checked at this revision; x64 and ARM64 are supported. Its existing feed uses legacy repository URLs, so this listing remains source-only. The app icon was downloaded from Traysky/Assets/Square150x150Logo.scale-200.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/traysky/tree/48e04cd099c68f6f253d42ae8dafd780575e0bc8",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

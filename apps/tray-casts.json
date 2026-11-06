@@ -1,0 +1,39 @@
+{
+  "id": "tray-casts",
+  "displayName": "Tray Casts",
+  "description": "Listen to podcasts from the Windows notification area.",
+  "categories": [
+    "Entertainment"
+  ],
+  "tags": [
+    "Podcasts",
+    "Audio"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Casts.",
+    "path": "assets/tray-casts/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-casts",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: TrayCasts/Assets/Square150x150Logo.png at source revision 15a417979b667ef2f118a5cffd0a9697288456ed; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-casts/blob/15a417979b667ef2f118a5cffd0a9697288456ed/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the nested TrayCasts Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from TrayCasts/Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-casts/tree/15a417979b667ef2f118a5cffd0a9697288456ed",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

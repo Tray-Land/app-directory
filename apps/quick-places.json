@@ -1,0 +1,39 @@
+{
+  "id": "quick-places",
+  "displayName": "Quick Places",
+  "description": "Search for nearby places and see essential information such as hours, website, and phone number.",
+  "categories": [
+    "Utilities"
+  ],
+  "tags": [
+    "Maps",
+    "Local search"
+  ],
+  "icon": {
+    "description": "Square app icon for Quick Places.",
+    "path": "assets/quick-places/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/quick-places",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision e02d5aa7b29abc1e66d00fefbc5134e96cc47bf8; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/quick-places/blob/e02d5aa7b29abc1e66d00fefbc5134e96cc47bf8/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app requires a user-supplied Google Places API key and optionally an Azure Maps key for its live data features. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/quick-places/tree/e02d5aa7b29abc1e66d00fefbc5134e96cc47bf8",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

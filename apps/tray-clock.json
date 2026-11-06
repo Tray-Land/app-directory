@@ -1,0 +1,40 @@
+{
+  "id": "tray-clock",
+  "displayName": "Tray Clock",
+  "description": "View world clocks, a stopwatch, and timers from a Windows tray flyout.",
+  "categories": [
+    "Utilities"
+  ],
+  "tags": [
+    "Clock",
+    "Timer",
+    "World time"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Clock.",
+    "path": "assets/tray-clock/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-clock",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision f8db3f0315200d62cbcd4f4597b041a4bb9db6e3; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-clock/blob/f8db3f0315200d62cbcd4f4597b041a4bb9db6e3/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-clock/tree/f8db3f0315200d62cbcd4f4597b041a4bb9db6e3",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

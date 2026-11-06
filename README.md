@@ -54,8 +54,9 @@ permissions and no publication/signing secrets.
   source revision, and project path. Source alone is not permission to build.
 - The converter pilot recipe exists in the local kit source, but the required
   immutable public kit release has not been published or verified. Accordingly,
-  `recipes/approved.json` remains empty and the bundled listing does not expose
-  a Remix action. Do not substitute a proposed release URL for that evidence.
+  `recipes/approved.json` remains empty and the Tray Converter listing does not
+  expose a Remix action. Do not substitute a proposed release URL for that
+  evidence.
 - A GitHub channel requires an actual stable `.appinstaller`, package name
   and publisher independently checked against the feed/package, and feed and
   immutable assets in the **same repository** as the listing. Store channels
@@ -71,8 +72,9 @@ permissions and no publication/signing secrets.
   copyright/permission notices in `assets/LICENSE` and
   `assets/ATTRIBUTION.md`. No SVG, script, HTML, external image URLs,
   symlinks, executable content, or images with uncertain third-party rights.
-  The two seed icons are MIT-licensed; screenshots with map/wallpaper
-  content were intentionally omitted.
+  Published icons are MIT-licensed and pinned by source revision; screenshots
+  with map, wallpaper, team-logo, poster, or other third-party content were
+  intentionally omitted.
 - Protect changes to publishers, feed destinations, identities, recipe
   approvals, and workflows with maintainer review. Network health checks
   should report issues, never rewrite metadata or withdraw apps automatically.

@@ -1,0 +1,41 @@
+{
+  "id": "tray-wiz",
+  "displayName": "TrayWiz",
+  "description": "Control WiZ smart bulbs from the Windows system tray.",
+  "categories": [
+    "Utilities",
+    "Smart Home"
+  ],
+  "tags": [
+    "WiZ",
+    "Lighting",
+    "Local network"
+  ],
+  "icon": {
+    "description": "Square app icon for TrayWiz.",
+    "path": "assets/tray-wiz/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-wiz",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision f690d5ead21fd24915acc9c9ea144ab60e179881; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-wiz/blob/f690d5ead21fd24915acc9c9ea144ab60e179881/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. Control uses the local network. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-wiz/tree/f690d5ead21fd24915acc9c9ea144ab60e179881",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

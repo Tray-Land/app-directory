@@ -1,0 +1,39 @@
+{
+  "id": "tray-sounds",
+  "displayName": "Tray Sounds",
+  "description": "Play stock sounds or your own recordings from the Windows notification area.",
+  "categories": [
+    "Entertainment"
+  ],
+  "tags": [
+    "Audio",
+    "Soundboard"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Sounds.",
+    "path": "assets/tray-sounds/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-sounds",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joseph Finney. Icon: Assets/Square150x150Logo.png at source revision 4ec89fc3da3cfdea60226a07bc7847585df2e6e0; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-sounds/blob/4ec89fc3da3cfdea60226a07bc7847585df2e6e0/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. Only the app icon is redistributed; no bundled audio is included here. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-sounds/tree/4ec89fc3da3cfdea60226a07bc7847585df2e6e0",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

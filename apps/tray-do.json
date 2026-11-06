@@ -1,0 +1,39 @@
+{
+  "id": "tray-do",
+  "displayName": "Tray Do",
+  "description": "Keep a simple to-do scratch list always at hand from the Windows system tray.",
+  "categories": [
+    "Productivity"
+  ],
+  "tags": [
+    "Tasks",
+    "To-do"
+  ],
+  "icon": {
+    "description": "Square app icon for Tray Do.",
+    "path": "assets/tray-do/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/tray-do",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joe Finney. Icon: Assets/Square150x150Logo.png at source revision d67258d06a779787d019e7ee33e26c2f12e8ee7f; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/tray-do/blob/d67258d06a779787d019e7ee33e26c2f12e8ee7f/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. Its existing feed uses legacy repository URLs, so this listing remains source-only. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/tray-do/tree/d67258d06a779787d019e7ee33e26c2f12e8ee7f",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}

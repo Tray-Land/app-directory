@@ -1,0 +1,40 @@
+{
+  "id": "trayulator",
+  "displayName": "Trayulator",
+  "description": "Use a small WinUI calculator built with Rust from the Windows system tray.",
+  "categories": [
+    "Utilities",
+    "Productivity"
+  ],
+  "tags": [
+    "Calculator",
+    "Rust"
+  ],
+  "icon": {
+    "description": "Square app icon for Trayulator.",
+    "path": "assets/trayulator/icon.png"
+  },
+  "screenshots": [],
+  "repositoryUrl": "https://github.com/Tray-Land/trayulator",
+  "license": {
+    "remixVerified": true,
+    "attribution": "Copyright 2026 Joe Finney. Icon: Assets/Square150x150Logo.png at source revision 33306548f010b6159cb977084be06931abbd84e3; MIT notice is distributed with the image.",
+    "fileUrl": "https://github.com/Tray-Land/trayulator/blob/33306548f010b6159cb977084be06931abbd84e3/LICENSE",
+    "redistributionVerified": true,
+    "spdxId": "MIT"
+  },
+  "compatibility": {
+    "minimumWindowsVersion": "10.0.17763.0",
+    "architectures": [
+      "x64",
+      "arm64"
+    ]
+  },
+  "channels": [],
+  "status": "active",
+  "verification": {
+    "notes": "Public MIT Rust source and the Windows package manifest were checked at this revision; the signed release bundle independently establishes x64 and ARM64 support. Its feed uses legacy repository URLs, so this listing remains source-only. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "sourceUrl": "https://github.com/Tray-Land/trayulator/tree/33306548f010b6159cb977084be06931abbd84e3",
+    "checkedAtUtc": "2026-11-06T03:59:05Z"
+  }
+}
