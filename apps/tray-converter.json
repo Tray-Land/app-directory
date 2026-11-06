@@ -21,11 +21,22 @@
     "minimumWindowsVersion": "10.0.17763.0",
     "architectures": ["x64", "arm64"]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "FBFD9E94-0D86-412C-9334-D0C765F24E32",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-converter/releases/latest/download/TrayConverter.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "checkedAtUtc": "2026-10-27T14:17:27Z",
+    "checkedAtUtc": "2026-11-06T00:05:30Z",
     "sourceUrl": "https://github.com/Tray-Land/tray-converter/tree/fe46aaaef4bd871090b72b52e0f3c73809fb20b4",
-    "notes": "Public MIT source and Windows package manifest checked at this revision. Release v1.0.0 has architecture-specific MSIX files but no stable .appinstaller. A local pinned remix recipe exists, but its immutable public tray-kit release and catalog approval are not yet available. This remains a source listing, not a supported install or remix channel."
+    "notes": "Public MIT source and Windows package manifest checked at this revision. Stable v1.0.2 App Installer, immutable main bundle, and x64/ARM64 dependency assets were downloaded from the same Tray-Land/tray-converter release. The feed and signed x64/ARM64 packages independently matched identity FBFD9E94-0D86-412C-9334-D0C765F24E32 and the stated publisher. A local pinned remix recipe exists, but its immutable public tray-kit release and catalog approval are not yet available, so remix remains unavailable."
   }
 }
