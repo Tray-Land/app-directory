@@ -29,11 +29,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "F5FA5E95-5FE9-469D-AD6E-39AA312F6279",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-nudge/releases/latest/download/TrayNudge.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported, and the app is offline. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported, and the app is offline. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.1.0 App Installer https://github.com/Tray-Land/tray-nudge/releases/latest/download/TrayNudge.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/tray-nudge/tree/d3bbc30c9d7aeca7ee5504b097080cc927e1c6f3",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }

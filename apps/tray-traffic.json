@@ -30,11 +30,22 @@
       "arm64"
     ]
   },
-  "channels": [],
+  "channels": [
+    {
+      "id": "release",
+      "kind": "gitHub",
+      "identityVerified": true,
+      "identity": {
+        "name": "19233404-2359-4EE2-96E9-62EBC0A5FA8B",
+        "publisher": "CN=Joseph Finney, O=Joseph Finney, L=Milwaukee, S=Wisconsin, C=US, PostalCode=53212"
+      },
+      "appInstallerUrl": "https://github.com/Tray-Land/tray-traffic/releases/latest/download/TrayTraffic.appinstaller"
+    }
+  ],
   "status": "active",
   "verification": {
-    "notes": "Public MIT application source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The source documents a separate license for the native map dependency; no map screenshot is redistributed. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or install/remix claim is included.",
+    "notes": "Public MIT application source and the Windows package manifest were checked at this revision; x64 and ARM64 are supported. The source documents a separate license for the native map dependency; no map screenshot is redistributed. The app icon was downloaded from Assets/Square150x150Logo.png, parsed as a raster PNG, and checked against the MIT-covered source assets. No screenshot or remix claim is included. Stable v1.0.0 App Installer https://github.com/Tray-Land/tray-traffic/releases/latest/download/TrayTraffic.appinstaller, its immutable same-repository bundle and dependency assets, signed bundle and inner package identities, publisher, and x64/ARM64 packages were independently verified. Remix remains unavailable.",
     "sourceUrl": "https://github.com/Tray-Land/tray-traffic/tree/ef2ca8133fe48293c778f7ddbeaeaee584e3ac53",
-    "checkedAtUtc": "2026-11-06T03:59:05Z"
+    "checkedAtUtc": "2026-11-06T04:26:22Z"
   }
 }
